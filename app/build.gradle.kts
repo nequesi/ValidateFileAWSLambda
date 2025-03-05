@@ -17,6 +17,16 @@ repositories {
 }
 
 dependencies {
+    implementation("com.amazonaws:aws-lambda-java-core:1.2.2")
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3
+    implementation("com.amazonaws:aws-java-sdk-s3:1.12.681")
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-lambda-java-events
+    implementation("com.amazonaws:aws-lambda-java-events:3.14.0")
+    // https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sqs
+    implementation("com.amazonaws:aws-java-sdk-sqs:1.12.681")
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    implementation("org.slf4j:slf4j-simple:2.0.7")
     // This dependency is used by the application.
     implementation(libs.guava)
 }
